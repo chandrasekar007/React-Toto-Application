@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# TOTO APP -Simple Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Toto App Is a Simple Light Weight and easy-to-use task manager User Friendly Web Application. 
 
-## Available Scripts
 
-In the project directory, you can run:
+# Installation steps 
+   1.Clone the Repository
 
-### `npm start`
+   git clone https://github.com/chandrasekar007/React-Toto-Application.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   2.Install Dependencies
+ 
+   npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   3.Start the Application
 
-### `npm test`
+   npm start
+   
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# ToTo App Features
+   
+    ToDo App helps users manage daily tasks easily. Below are the main features with clear descriptions:-
 
-### `npm run build`
+ 1. Add Task
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Users can create new tasks by entering a task name . This helps them keep track of things they need to do.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 2. Edit Task
+ 
+    If a user makes a mistake or wants to update a task, they can edit the existing task anytime.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 3. Mark Task as Completed
 
-### `npm run eject`
+    Once a task is finished, users can mark it as completed. This helps them visually see what’s done and what’s pending.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ 4. Delete Task
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Users can remove tasks they no longer need. This keeps the task list clean .
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Screenshots 
 
-## Learn More
+ Here is the Toto App Home Screen
+ <p float="left">
+  <img src="./screenshots/Home.png" width="300"/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  Here is the Toto App Adding Task Screen
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  <img src="./screenshots/Add task.png" width="300"/>
 
-### Code Splitting
+  Here is the Toto App Editing Task Screen
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ <img src="./screenshots/Edit And Check.png" width="300"/>
+ </p>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
