@@ -55,6 +55,3 @@ Toto App Is a Simple Light Weight and easy-to-use task manager User Friendly Web
  </p>
 
 
-
-
-
