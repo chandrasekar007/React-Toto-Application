@@ -2,23 +2,60 @@ import "./App.css";
 import { useState, useEffect } from "react";
 
 function App() {
+
   const [todos, setTodos] = useState(
+
     () => JSON.parse(localStorage.getItem("totos")) || []
+
   );
 
+
+  const url = "https://jsonplaceholder.typicode.com/todos";
+
   useEffect(() => {
+
+  const fetchData = async () => {
+    
+      const res = await fetch(url);
+      const data = await res.json();
+
+      setTodos(
+
+        data.slice(0, 7).map(item => ({
+
+          checked: item.completed,
+          data: item.title
+
+        }))
+
+      );
+
+    
+  };
+
+  fetchData();
+}, []);
+
+  useEffect(() => {
+
     localStorage.setItem("totos", JSON.stringify(todos));
+
   }, [todos]);
+
 
   const [input, setInput] = useState("");
 
   const [edit, setEdit] = useState(null);
 
   function adddata() {
+
     if (input === "") {
+
       alert("please ender any Task");
+
     } else {
       if (edit !== null) {
+
         const copy = [...todos];
 
         copy[edit] = { ...copy[edit], data: input };
@@ -30,8 +67,10 @@ function App() {
         setEdit(null);
       } else {
         setTodos([...todos, { checked: false, data: input }]);
+       
       }
     }
+    
     setInput("");
   }
 
@@ -54,7 +93,6 @@ function App() {
   return (
     <div className="App">
       <h3 className="h3">TOTO-APPLICATION</h3>
-
       <div>
         <input
           type="text"
@@ -63,12 +101,16 @@ function App() {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter The Task"
         />
+
         <button className="abtn" onClick={adddata}>
           ADD+
         </button>
+
       </div>
 
+
       <div className="task-items">
+
         <ul>
           {todos.map((todotask, index) => (
             <li className="card" key={index} style={{}}>
@@ -84,7 +126,8 @@ function App() {
                   textDecoration: todotask.checked ? "line-through" : "none",
                 }}
               >
-                <p id="textmark">{todotask.data}</p>
+                <p id="textmark">{todotask.data || todotask.title}</p>
+
               </h3>
 
               <button className="ebtn" onClick={() => edits(index)}>
@@ -97,7 +140,11 @@ function App() {
             </li>
           ))}
         </ul>
+
+        
       </div>
+
+
     </div>
   );
 }
