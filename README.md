@@ -1,24 +1,24 @@
 # TOTO APP -Simple Task Manager
 
-Toto App Is a Simple Light Weight and easy-to-use task manager User Friendly Web Application. 
+Toto App Is a Simple Light Weight and easy-to-use task manager User Friendly Web Application.
 
 
-# Installation steps 
+# Installation steps
    1.Clone the Repository
 
    git clone https://github.com/chandrasekar007/React-Toto-Application.git
 
    2.Install Dependencies
- 
+
    npm install
 
    3.Start the Application
 
    npm start
-   
+
 
 # ToTo App Features
-   
+
     ToDo App helps users manage daily tasks easily. Below are the main features with clear descriptions:-
 
  1. Add Task
@@ -37,9 +37,9 @@ Toto App Is a Simple Light Weight and easy-to-use task manager User Friendly Web
 
     Users can remove tasks they no longer need. This keeps the task list clean .
 
-  
 
-# Screenshots 
+
+# Screenshots
 
  Here is the Toto App Home Screen
  <p float="left">
@@ -53,8 +53,3 @@ Toto App Is a Simple Light Weight and easy-to-use task manager User Friendly Web
 
  <img src="./screenshots/Edit And Check.png" width="300"/>
  </p>
-
-
-
-
-

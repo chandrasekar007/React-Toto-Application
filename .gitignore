@@ -4,7 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
- 
 # testing
 /coverage
 
@@ -14,6 +13,8 @@
 # misc
 .README.md
 .node_modules
+.package-lock.json
+
 .DS_Store
 .env.local
 .env.development.local
